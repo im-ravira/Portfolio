@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravikumar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+</head>
+
+<body class="dark:text-gray-200 dark:bg-slate-900">
+
+  <!-- NavBar -->
+
+  <header class="fixed xl:block w-full py-4 lg:px-0 px-5 z-[999] duration-300">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto px-2">
+
+      <!-- Name & Logo -->
+
+      <div class="flex sm:gap-2 gap-4 items-center">
+        <div class="bg-primary text-white rounded-sm rounded-tr-lg size-8 text-2xl grid place-items-center">
+          Ꮢ
+        </div>
+        <div>
+          <h4 class="font-bold text-base uppercase text-left">RAVIKUMAR</h4>
+          <p class="text-xs"></p>
+        </div>
+      </div>
+
+      <!-- Nabar Links -->
+
+      <ul class="gap-10 md:flex hidden hover:*:text-primary *:duration-200">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+        <!-- Theme-Switcher -->
+        <li class="theme-switch">
+          <span class="mdi mdi-theme-light-dark cursor-pointer"></span>
+        </li>
+      </ul>
+      <div class="flex items-center gap-6">
+        <a href="https://www.linkedin.com/in/imravira/" target="_blank">
+          <button class="btn btn-outline md:!flex !hidden">
+            <span class="mdi mdi-account-plus"></span> Connect
+          </button>
+        </a>
+        <span class="theme-switch md:hidden">
+
+          <span class="mdi mdi-theme-light-dark cursor-pointer"></span>
+        </span>
+        <span id="menubar" class="cursor-pointer md:hidden text-xl">
+          <span class="mdi mdi-menu"></span>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile-NavBar -->
+
+  <span id="backdrop" class="fixed h-screen hidden bg-black/10 backdrop-blur-sm z-[997] inset-0 w-full"></span>
+  <ul id="mobile-nav"
+    class="gap-10 text-xl md:hidden dark:bg-slate-800 bg-primary text-white flex-center flex-col fixed w-full h-0 overflow-hidden bottom-0 duration-200 rounded-t-3xl left-0 z-[998]">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+    <a href="https://www.linkedin.com/in/imravira/" target="_blank">
+      <button class="btn btn-outline">
+        <span class="mdi mdi-account-plus"></span> Connect
+      </button>
+    </a>
+  </ul>
+
+  <!-- Home-Section -->
+
+  <section id="home"
+    class="min-h-screen container grid place-items-center relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-heroLight before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-heroDark">
+    <div class="w-full pt-20 grid md:grid-cols-4 h-full items-center max-w-screen-lg justify-evenly">
+      <div class="lg:col-span-2 sm:pl-1 md:col-span-2 text-center">
+        <div>
+          <h4 class="font-medium text-gray-600 dark:text-gray-200 lg:p-3">
+            Hi there 👋
+          </h4>
+          <h3 class="sm:text-4xl text-3xl dark:text-white !leading-normal relative font-medium">
+            I'm <span class="text-primary">RAVIKUMAR</span> <br />
+            Front-End Web Developer
+          </h3>
+          <a href="/assets/resume.pdf" download="Ravikumar_cv.pdf">
+            <button class="btn btn-outline mt-5 lg:mt-8">
+            <span class="mdi mdi-tray-arrow-down"></span> Download Resume
+          </button>
+        </a>
+        </div>
+
+        <div class="flex mt-5 lg:mt-8 gap-3 dark:text-gray-300">
+          <p class="text:sm max-sm:text-xs text-balance leading-5 max-w-md px-2 mx-auto">
+            I'm a self-taught React developer passionate about learning new
+            technologies and turning knowledge into actionable, imaginative
+            solutions for clients.
+          </p>
+        </div>
+        <div class="flex items-center justify-center dark:text-gray-200 text-gray-600 gap-6 mt-5 lg:mt-8">
+          <p class="text-sm max-sm">Follow Us</p>
+          <div class="flex justify-end gap-6">
+            <a href="https://github.com/im-ravira" target="_blank" class="social-icon">
+              <span class="mdi mdi-github"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/imravira/" target="_blank" class="social-icon">
+              <span class="mdi mdi-linkedin"></span>
+            </a>
+            <a href="https://www.instagram.com/im_ravira" target="_blank" class="social-icon">
+              <span class="mdi mdi-instagram"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-span-2 max-sm:mt-16 bg-none  dark:from-slate-800 from-gray-100 lg:h-auto md:h-auto h-96 w-full items-center justify-evenly">
+        <div class="flex flex-col gap-8">
+          <img src="./assets/profile.png" class="mx-auto w-2/3 md:mb-5 max-w-96" alt="" />
+          <div class="flex justify-center mx-auto mb-2 md:mb-4 lg:mb-12">
+            <a href="#contact">
+              <button class="btn btn-filled">
+                <span class="mdi mdi-email-outline"></span> Hire Me
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- About-Section -->
+
+  <section id="about" class="container max-w-full mx-auto flex-center px-5">
+    <div class="p-4">
+      <div class="font-semibold text-center">
+        <h3>About Me</h3>
+      </div>
+      <div class=" mx-auto">
+        <div class="max-w-8xl px-6 py-4 mx-auto sm:px-8 mt-5 ">
+          <div class=" flex items-centr">
+            <div class=" p-8 md:p-10">
+              <div class="space-y-4">
+                <p class="text-primary text-center font-semibold text-base">Hello, I am Ravikumar R.</p>
+                <p class="text-xs md:text-sm lg:text-sm leading-relaxed text-center">
+                  I earned a Bachelor's Degree in Mechanical Engineering from Sethu Institute of Technology in
+                  Virudunagar.
+                </p>
+                <p class="text-xs md:text-sm lg:text-sm  text-balance text-center gap-3">
+                  I am a self-taught front-end developer skilled at creating
+                  engaging web applications. With expertise in
+                  <span class="text-primary underline">HTML</span>,
+                  <span class="text-primary underline">CSS</span>,
+                  <span class="text-primary underline">Tailwind CSS</span>,
+                  <span class="text-primary underline">JavaScript</span>,
+                  <span class="text-primary underline">React</span>,
+                  <span class="text-primary underline">Next.js</span>, and
+                  <span class="text-primary underline">MySQL</span>, I excel at building
+                  intuitive and efficient front-end solutions. I am dedicated
+                  to continuous learning and upgrading my skills at every
+                  opportunity. I thrive on teamwork, contributing to goal
+                  setting and achieving targets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill-Section -->
+
+      <div class="max-w-6xl gap-6 mx-auto  mt-10  ">
+        <div class="*:text-primary flex items-center justify-center pb-6">
+          <h3 class="font-semibold pb-5">My Skills</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 pl-10 md:pl-14 lg:pl-20  pt-6 ">
+          <div class="mb-8 flex flex-row items-center justify-between gap-3  ">
+            <div class="flex flex-col items-center">
+              <img src="/assets/icons8-html.svg" class="size-12 md:size-14 lg:size-14" alt="Html">
+              <h5 class="text-sm font-semibold">Html</h5>
+            </div>
+            <div class="bg-stroke dark:bg-dark-3 relative h-4 md:h-5 lg:h-5 w-full rounded-2xl">
+              <div
+                class="bg-[#e65100] absolute top-0 left-0 flex h-full w-[75%] items-center justify-center rounded-2xl text-xs font-semibold text-white">
+                85%
+              </div>
+            </div>
+          </div>
+          <div class="mb-8 flex flex-row items-center justify-between gap-3">
+            <div class="flex flex-col items-center">
+              <img src="/assets/icons8-css.svg" class="size-12 md:size-14 lg:size-14" alt="Html">
+              <h5 class="text-sm font-semibold">Css</h5>
+            </div>
+            <div class="bg-stroke dark:bg-dark-3 relative h-4 md:h-5 lg:h-5 w-full rounded-2xl">
+              <div
+                class="bg-[#1690e7] absolute top-0 left-0 flex h-full w-[70%] items-center justify-center rounded-2xl text-xs font-semibold text-white">
+                70%
+              </div>
+            </div>
+          </div>
+          <div class="mb-8 flex flex-row items-center justify-between gap-3">
+            <div class="flex flex-col items-center">
+              <img src="/assets/icons8-javascript.svg" class="size-12 md:size-14 lg:size-14" alt="Html">
+              <h5 class="text-sm font-semibold">JavaScript</h5>
+            </div>
+            <div class="bg-stroke dark:bg-dark-3 relative h-4 md:h-5 lg:h-5 w-full rounded-2xl">
+              <div
+                class="bg-[#ffd600] absolute top-0 left-0 flex h-full w-[75%] items-center justify-center rounded-2xl text-xs font-semibold text-white">
+                85%
+              </div>
+            </div>
+          </div>
+          <div class="mb-8 flex flex-row items-center justify-between gap-3">
+            <div class="flex flex-col items-center">
+              <img src="/assets/icons8-git.svg" class="size-14 md:size-14 lg:size-14" alt="Html">
+              <h5 class="text-sm font-semibold">Git</h5>
+            </div>
+            <div class="bg-stroke dark:bg-dark-3 relative h-4 md:h-5 lg:h-5 w-full rounded-2xl">
+              <div
+                class="bg-[#e65100] absolute top-0 left-0 flex h-full w-[80%] items-center justify-center rounded-2xl text-xs font-semibold text-white">
+                90%
+              </div>
+            </div>
+          </div>
+          <div class="mb-8 flex flex-row items-center justify-between gap-3">
+            <div class="flex flex-col items-center">
+              <img src="/assets/icons8-tailwind-css.svg" class="size-12 md:size-14 lg:size-14" alt="Html">
+              <h5 class="text-sm font-semibold">Tailwind</h5>
+            </div>
+            <div class="bg-stroke dark:bg-dark-3 relative h-4 md:h-5 lg:h-5 w-full rounded-2xl">
+              <div
+                class="bg-[#00b3d2] absolute top-0 left-0 flex h-full w-[75%] items-center justify-center rounded-2xl text-xs font-semibold text-white">
+                85%
+              </div>
+            </div>
+          </div>
+          <div class="mb-8 flex flex-row items-center justify-between gap-3">
+            <div class="flex flex-col items-center">
+              <img src="/assets/icons8-react-js.svg" class="size-12 md:size-14 lg:size-14" alt="Html">
+              <h5 class="text-sm font-semibold">React</h5>
+            </div>
+            <div class="bg-stroke dark:bg-dark-3 relative h-4 md:h-5 lg:h-5 w-full rounded-2xl">
+              <div
+                class="bg-[#33a6f0] absolute top-0 left-0 flex h-full w-[75%] items-center justify-center rounded-2xl text-xs font-semibold text-white">
+                85%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects-Section -->
+
+  <section id="projects" class="container max-w-screen-lg relative mx-auto flex-center px-5">
+    <div class="p-2">
+      <div class="font-semibold text-center">
+        <h3>Projects</h3>
+      </div>
+      <div class="max-w-6xl mx-auto p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-20 gap-y-16">
+
+          <!-- Project-card1 -->
+          <div
+            class="rounded-xl overflow-hidden shadow-lg flex flex-col  dark:bg-slate-700 bg-gray-200 dark:text-gray-200 text-gray-800">
+            <a href="#"></a>
+            <div class="relative"><a href="#">
+                <img class="w-full" src="/assets/portfolio.png" alt="Portfolio Website">
+                <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+              </a><a href="#!">
+                <div
+                  class="text-xs absolute top-0 right-0 px-4 py-2  mt-3 mr-3 hover:text-primary transition duration-500 ease-in-out">
+                  <a href="#" class="preview">
+                    <span class="mdi mdi-alpha-i-circle"></span>
+                  </a>
+                </div>
+              </a>
+            </div>
+            <div class="px-6 pt-3 pb-2 mb-auto flex items-center justify-center ">
+              <a href="#"
+                class="font-medium text-lg text-center inline-block hover:text-primary transition duration-500 ease-in-out  mb-2">Portfolio
+                Website</a>
+            </div>
+            <div
+              class="px-6 pt-2 pb-3 text-sm flex flex-row items-center justify-between  dark:bg-slate-700 bg-gray-200 dark:text-gray-200 text-gray-800">
+              <span href="#" class="py-1 font-regular mr-1 flex flex-col items-center">
+                <a href="#" class="preview">
+                  <span class="mdi mdi-scan-helper"></span>
+                </a>
+                <span class="ml-1">preview</span>
+              </span>
+              <span href="#" class="py-1 font-regular mr-1 flex flex-col items-center">
+                <a href="#" class="social-icon">
+                  <span class="mdi mdi-github"></span>
+                </a>
+                <span class="ml-1">source</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Project-card2 -->
+
+          <div
+            class="rounded-xl overflow-hidden shadow-lg flex flex-col  dark:bg-slate-700 bg-gray-200 dark:text-gray-200 text-gray-800">
+            <a href="#"></a>
+            <div class="relative"><a href="#">
+                <img class="w-full" src="/assets/portfolio.png" alt="Portfolio Website">
+                <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+              </a><a href="#!">
+                <div
+                  class="text-xs absolute top-0 right-0 px-4 py-2  mt-3 mr-3 hover:text-primary transition duration-500 ease-in-out">
+                  <a href="#" class="preview">
+                    <span class="mdi mdi-alpha-i-circle"></span>
+                  </a>
+                </div>
+              </a>
+            </div>
+            <div class="px-6 pt-3 pb-2 mb-auto flex items-center justify-center ">
+              <a href="#"
+                class="font-medium text-lg text-center inline-block hover:text-primary transition duration-500 ease-in-out  mb-2">Portfolio
+                Website</a>
+            </div>
+            <div
+              class="px-6 pt-2 pb-3 text-sm flex flex-row items-center justify-between  dark:bg-slate-700 bg-gray-200 dark:text-gray-200 text-gray-800">
+              <span href="#" class="py-1 font-regular mr-1 flex flex-col items-center">
+                <a href="#" class="preview">
+                  <span class="mdi mdi-scan-helper"></span>
+                </a>
+                <span class="ml-1">preview</span>
+              </span>
+              <span href="#" class="py-1 font-regular mr-1 flex flex-col items-center">
+                <a href="#" class="social-icon">
+                  <span class="mdi mdi-github"></span>
+                </a>
+                <span class="ml-1">source</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Project-card3 -->
+
+          <div
+            class="rounded-xl overflow-hidden shadow-lg flex flex-col  dark:bg-slate-700 bg-gray-200 dark:text-gray-200 text-gray-800">
+            <a href="#"></a>
+            <div class="relative"><a href="#">
+                <img class="w-full" src="/assets/portfolio.png" alt="Portfolio Website">
+                <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+              </a><a href="#!">
+                <div
+                  class="text-xs absolute top-0 right-0 px-4 py-2  mt-3 mr-3 hover:text-primary transition duration-500 ease-in-out">
+                  <a href="#" class="preview">
+                    <span class="mdi mdi-alpha-i-circle"></span>
+                  </a>
+                </div>
+              </a>
+            </div>
+            <div class="px-6 pt-3 pb-2 mb-auto flex items-center justify-center ">
+              <a href="#"
+                class="font-medium text-lg text-center inline-block hover:text-primary transition duration-500 ease-in-out  mb-2">Portfolio
+                Website</a>
+            </div>
+            <div
+              class="px-6 pt-2 pb-3 text-sm flex flex-row items-center justify-between  dark:bg-slate-700 bg-gray-200 dark:text-gray-200 text-gray-800">
+              <span href="#" class="py-1 font-regular mr-1 flex flex-col items-center">
+                <a href="#" class="preview">
+                  <span class="mdi mdi-scan-helper"></span>
+                </a>
+                <span class="ml-1">preview</span>
+              </span>
+              <span href="#" class="py-1 font-regular mr-1 flex flex-col items-center">
+                <a href="#" class="social-icon">
+                  <span class="mdi mdi-github"></span>
+                </a>
+                <span class="ml-1">source</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Project-card4 -->
+
+          <div
+            class="rounded-xl overflow-hidden shadow-lg flex flex-col  dark:bg-slate-700 bg-gray-200 dark:text-gray-200 text-gray-800">
+            <a href="#"></a>
+            <div class="relative"><a href="#">
+                <img class="w-full" src="/assets/portfolio.png" alt="Portfolio Website">
+                <div
+                  class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                </div>
+              </a><a href="#!">
+                <div
+                  class="text-xs absolute top-0 right-0 px-4 py-2  mt-3 mr-3 hover:text-primary transition duration-500 ease-in-out">
+                  <a href="#" class="preview">
+                    <span class="mdi mdi-alpha-i-circle"></span>
+                  </a>
+                </div>
+              </a>
+            </div>
+            <div class="px-6 pt-3 pb-2 mb-auto flex items-center justify-center ">
+              <a href="#"
+                class="font-medium text-lg text-center inline-block hover:text-primary transition duration-500 ease-in-out  mb-2">Portfolio
+                Website</a>
+            </div>
+            <div
+              class="px-6 pt-2 pb-3 text-sm flex flex-row items-center justify-between  dark:bg-slate-700 bg-gray-200 dark:text-gray-200 text-gray-800">
+              <span href="#" class="py-1 font-regular mr-1 flex flex-col items-center">
+                <a href="#" class="preview">
+                  <span class="mdi mdi-scan-helper"></span>
+                </a>
+                <span class="ml-1">preview</span>
+              </span>
+              <span href="#" class="py-1 font-regular mr-1 flex flex-col items-center">
+                <a href="#" class="social-icon">
+                  <span class="mdi mdi-github"></span>
+                </a>
+                <span class="ml-1">source</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact-Section -->
+
+  <section id="contact" class="container relative mx-auto min-h-screen flex-center px-5">
+    <div class="p-2">
+      <div class="font-semibold text-center max-sm:p-10">
+        <h3>Contact Me</h3>
+      </div>
+
+      <!-- Contact-Details -->
+
+      <div class="max-w-screen-lg mx-auto max-sm:p-0 p-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 rounded-xl">
+          <div
+            class="dark:bg-gray-700 bg-white md:col-span-4 p-10 text-xs text-center dark:text-gray-200 text-gray-600 leading-5 max-sm:rounded-t-xl md:rounded-l-xl lg:rounded-l-xl shadow-xl">
+            <h3 class="font-semibold text-xl border-b pb-4 dark:border-gray-200 border-gray-600">
+              Let's Talk with <span class="text-primary">Me</span>
+            </h3>
+            <div class="flex items-center justify-center mt-10 sm:gap-2 gap-5">
+              <span class="mdi mdi-map-marker"></span>
+              <span class="text-sm dark:text-gray-200 text-gray-600 leading-5">Madurai, TamilNadu.</span>
+            </div>
+            <div class="flex items-center justify-center mt-7 sm:gap-2 gap-5">
+              <span class="mdi mdi-cellphone"></span>
+              <span class="text-sm dark:text-gray-200 text-gray-600 leading-5">+91 91 59 92 54 38</span>
+            </div>
+            <div class="flex items-center justify-center mt-7 sm:gap-2 gap-4">
+              <span class="mdi mdi-email-outline"></span>
+              <span class="text-sm dark:text-gray-200 text-gray-600 leading-5">imravira@gmail.com</span>
+            </div>
+            <div class="flex items-center justify-center mt-10 dark:text-gray-200 text-gray-600">
+              <p class="text-sm font-semibold border-b b dark:border-gray-200 border-gray-600 pb-4 px-6">
+                Follow Us
+              </p>
+            </div>
+            <div class="flex items-center justify-center mt-10 gap-8 text-sm">
+              <a href="#" class="social-icon">
+                <span class="mdi mdi-github"></span>
+              </a>
+              <a href="#" class="social-icon">
+                <span class="mdi mdi-linkedin"></span>
+              </a>
+              <a href="#" class="social-icon">
+                <span class="mdi mdi-instagram"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact-Form -->
+
+          <form
+            class="md:col-span-8 p-10 dark:bg-slate-800 bg-gray-200 dark:text-gray-200 text-gray-800 max-sm:rounded-b-xl md:rounded-r-xl lg:rounded-r-xl shadow-xl">
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block tracking-wide text-sm font-semibold mb-2" for="grid-first-name">
+                  First Name
+                </label>
+                <input
+                  class="appearance-none text-sm block w-full bg-slate-50 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white  text-black"
+                  id="grid-first-name" type="text" placeholder="First Name" />
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                <label class="block tracking-wide text-sm font-semibold mb-2" for="grid-last-name">
+                  Last Name
+                </label>
+                <input
+                  class="appearance-none text-sm block w-full bg-slate-50 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500  text-black"
+                  id="grid-last-name" type="text" placeholder="Last Name" />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label class="block tracking-wide text-sm font-semibold mb-2" for="grid-password">
+                  Email Address
+                </label>
+                <input
+                  class="appearance-none text-sm block w-full bg-slate-50 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500  text-black"
+                  id="grid-email" type="email" placeholder="********@gmail.com" />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label class="block tracking-wide text-sm font-semibold mb-2" for="grid-password">
+                  Your Message
+                </label>
+                <textarea rows="10"
+                  class="appearance-none block w-full bg-slate-50 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-black text-sm"></textarea>
+              </div>
+              <div class="flex justify-center w-full px-3">
+                <button class="btn btn-filled text-white font-semibold py-2 px-6 rounded" type="submit">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer-Section -->
+
+  <footer class=" dark:bg-slate-700 bg-slate-100 text-center py-2">
+    &copy;  RAVIKUMAR 
+    <div class="flex justify-center items-end py-2 text-xl">
+      <a href="#home"><span class="mdi mdi-arrow-up-drop-circle"></span></a>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+  <script>
+    const header = document.querySelector("header");
+
+    const toggleClasses = (element, classes, condition) => {
+      classes.forEach((className) => {
+        element.classList.toggle(className, condition);
+      });
+    };
+
+    window.addEventListener("scroll", () => {
+      toggleClasses(
+        header,
+        [
+          "shadow-lg",
+          "dark:sm:bg-slate-900",
+          "dark:bg-slate-800",
+          "dark:text-white",
+          "bg-white",
+        ],
+        window.scrollY > 0
+      );
+    });
+  </script>
+</body>
+
+</html>
